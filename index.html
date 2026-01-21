@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberPulse Stream | Live SOC Feed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="scanlines"></div>
+    <header>
+        <div class="logo">
+            <span class="pulse-icon"></span>
+            <h1>Cyber<span>Pulse</span> <span class="stream-badge">STREAM</span></h1>
+        </div>
+        <div class="app-desc">Live SOC Feed</div>
+        <div class="clock" id="wallClock">00:00:00 UTC</div>
+    </header>
+
+    <main class="stream-container">
+        <!-- Unified Stream Column -->
+        <section class="stream-column central-feed" id="col-unified">
+            <div class="column-header">
+                <h2>INTELLIGENCE FEED</h2>
+                <span class="time-window">LAST 24H</span>
+            </div>
+            <div class="scroll-wrapper">
+                <div class="scroll-content" id="mainFeed">
+                    <!-- Javascript will populate this -->
+                    <div class="loading-state">Initializing Unified Stream...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
