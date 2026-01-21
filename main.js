@@ -44,7 +44,7 @@ function isRecent(dateString) {
     return (Date.now() - pubDate.getTime()) < ONE_DAY_MS;
 }
 
-function cleanText(text, limit = 150) {
+function cleanText(text, limit = 1200) {
     const div = document.createElement('div');
     div.innerHTML = text;
     let clean = div.textContent || div.innerText || '';
@@ -224,7 +224,7 @@ function renderUnifiedStream() {
                 </div>
                 <div class="software-family" style="color: ${color}">SEVERITY: ${severity} (CVSS ${item.score})</div>
                 <div class="item-title">${item.id}</div>
-                <div class="item-desc">${cleanText(item.description, 600)}</div>
+                <div class="item-desc">${cleanText(item.description, 1200)}</div>
             `;
         } else if (item.type === 'breach') {
             card.className = `feed-item type-breach`;
@@ -237,7 +237,7 @@ function renderUnifiedStream() {
                     <span class="item-time">${time}</span>
                 </div>
                 <div class="item-title">${item.title}</div>
-                <div class="item-desc">${cleanText(item.description || item.content, 150)}</div>
+                <div class="item-desc">${cleanText(item.content || item.description, 1200)}</div>
             `;
         } else {
             // News
@@ -251,7 +251,7 @@ function renderUnifiedStream() {
                     <span class="item-time">${time}</span>
                 </div>
                 <div class="item-title">${item.title}</div>
-                <div class="item-desc">${cleanText(item.description || item.content, 150)}</div>
+                <div class="item-desc">${cleanText(item.content || item.description, 1200)}</div>
             `;
         }
 
