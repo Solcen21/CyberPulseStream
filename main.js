@@ -4,15 +4,11 @@ const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 // Configs
 const NEWS_FEEDS = [
     { name: 'The Hacker News', url: 'https://feeds.feedburner.com/TheHackersNews' },
-    { name: 'Bleeping Computer', url: 'https://www.bleepingcomputer.com/feed/' },
     { name: 'Dark Reading', url: 'https://www.darkreading.com/rss.xml' },
     { name: 'CyberScoop', url: 'https://cyberscoop.com/feed/' },
-    { name: 'SecurityWeek', url: 'https://www.securityweek.com/feed/' },
     { name: 'ZDNet', url: 'https://www.zdnet.com/topic/security/rss.xml' },
-    { name: 'Krebs on Security', url: 'https://krebsonsecurity.com/feed/' },
     { name: 'The Record', url: 'https://therecord.media/feed' },
-    { name: 'Help Net Security', url: 'https://www.helpnetsecurity.com/feed/' },
-    { name: 'CISA Alerts', url: 'https://www.cisa.gov/news-events/cybersecurity-advisories/rss.xml' }
+    { name: 'Help Net Security', url: 'https://www.helpnetsecurity.com/feed/' }
 ];
 
 const BREACH_FEEDS = [
