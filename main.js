@@ -2,23 +2,20 @@ const START_TIME = Date.now();
 const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 
 // Configs
+
 const NEWS_FEEDS = [
-    { name: 'The Hacker News', url: 'https://feeds.feedburner.com/TheHackersNews' },
-    { name: 'Bleeping Computer', url: 'https://www.bleepingcomputer.com/feed/' },
-    { name: 'Dark Reading', url: 'https://www.darkreading.com/rss.xml' },
-    { name: 'CyberScoop', url: 'https://cyberscoop.com/feed/' },
-    { name: 'SecurityWeek', url: 'https://www.securityweek.com/feed/' },
-    { name: 'ZDNet', url: 'https://www.zdnet.com/topic/security/rss.xml' },
-    { name: 'Krebs on Security', url: 'https://krebsonsecurity.com/feed/' },
-    { name: 'The Record', url: 'https://therecord.media/feed' },
-    { name: 'Help Net Security', url: 'https://www.helpnetsecurity.com/feed/' },
-    { name: 'CISA Alerts', url: 'https://www.cisa.gov/news-events/cybersecurity-advisories/rss.xml' }
+    { name: "The Hacker News", url: "https://feeds.feedburner.com/TheHackersNews" },
+    { name: "Dark Reading", url: "https://www.darkreading.com/rss.xml" },
+    { name: "CyberScoop", url: "https://cyberscoop.com/feed/" },
+    { name: "ZDNet", url: "https://www.zdnet.com/topic/security/rss.xml" },
+    { name: "The Record", url: "https://therecord.media/feed" },
+    { name: "Help Net Security", url: "https://www.helpnetsecurity.com/feed/" }
 ];
 
 const BREACH_FEEDS = [
-    { name: 'DataBreaches.net', url: 'https://www.databreaches.net/feed/' },
-    { name: 'Bleeping (Breach)', url: 'https://www.bleepingcomputer.com/news/security/breach/feed/' }
+    { name: "DataBreaches.net", url: "https://www.databreaches.net/feed/" }
 ];
+
 
 // NVD CVE API 2.0
 const CVE_API = "https://services.nvd.nist.gov/rest/json/cves/2.0";
