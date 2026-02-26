@@ -12,8 +12,7 @@ const NEWS_FEEDS = [
 ];
 
 const BREACH_FEEDS = [
-    { name: 'DataBreaches.net', url: 'https://www.databreaches.net/feed/' },
-    { name: 'Bleeping (Breach)', url: 'https://www.bleepingcomputer.com/news/security/breach/feed/' }
+    { name: 'DataBreaches.net', url: 'https://www.databreaches.net/feed/' }
 ];
 
 const CVE_API = 'https://services.nvd.nist.gov/rest/json/cves/2.0';
