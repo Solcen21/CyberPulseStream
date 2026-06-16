@@ -26,7 +26,7 @@ const CVE_API = "https://services.nvd.nist.gov/rest/json/cves/2.0";
 
 // ✅ Replace with your Worker:
 // Example: "https://rss-proxy.yourname.workers.dev/rss?url="
-const RSS_PROXY_BASE = "https://rss-proxy.solcen21.workers.dev/rss?url=";
+const RSS_PROXY_BASE = "https://api.solcen21.com/rss?url=";
 
 // Optional: NVD api key header (recommended for stability with NVD v2)
 const NVD_API_KEY = ""; // leave blank if you don't have one
